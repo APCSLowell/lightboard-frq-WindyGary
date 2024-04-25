@@ -14,7 +14,7 @@ public class LightBoard
     lights = new boolean[numRows][numCols];
     for(int r = 0; r < numRows; r++){
       for(int c = 0; c < numCols; c++){
-        if (Math.Random() < 0.4){
+        if (Math.random() < 0.4){
           lights[r][c] = true;
         }
         lights[r][c] = false;
@@ -32,7 +32,7 @@ public class LightBoard
 
     int count = 0;
 
-    for (int i = 0; i < lights.length(); i++){
+    for (int i = 0; i < lights.length; i++){
       if (lights[i][col] == true){
         count++;
       }
